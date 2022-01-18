@@ -16,7 +16,7 @@ const [showShoppingCart, setShowShoppingCart] = useState(false)
   return (
     <div> 
       <div className='openShowShoppingCart'>
-      <button className='cartBtn' onClick={() => setShowShoppingCart(true)}>🛒 <span>{props.cartProductArray.length}</span>  </button>  
+      <button className='cartBtn' onClick={() => setShowShoppingCart(true)}>🛒 <span>{props.shoppingCart.length}</span>  </button>  
       
       </div>
       
@@ -24,7 +24,10 @@ const [showShoppingCart, setShowShoppingCart] = useState(false)
 
       <div className='cartProducts'>  
       <span className='closeShowShoppingCart' onClick={() => setShowShoppingCart(false)}>❌</span>
-        <div className='entry'>{props.cartProductArray.map(( item,index)=> <ShoppingCartItem  cartProductArray={props.cartProductArray} setShoppingCart={props.setShoppingCart} item={item}  index={index} key={index} /> )}   
+        <div className='entry'>{props.shoppingCart.map(( item,index)=> <ShoppingCartItem  shoppingCart={props.shoppingCart} setShoppingCart={props.setShoppingCart} item={item}  index={index} key={index} /> )}   
+         
+        <div>Total order value <span>{}</span> €</div> 
+
         <div className='sendToCustomer'>
         <input className='inputCustomer' type="text" />
         <button className='sendToCustomerBtn'>send to customer</button> 

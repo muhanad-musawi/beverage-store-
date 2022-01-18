@@ -72,7 +72,7 @@ function App() {
     <div className="App">  
     
     <Header/>  
-   <ShoppingCart  setShoppingCart={setShoppingCart} cartProductArray={shoppingCart}/>
+   <ShoppingCart  setShoppingCart={setShoppingCart} shoppingCart={shoppingCart}/>
     <FilterProducts setSelectedFilter= {setSelectedFilter}/> 
 
   
