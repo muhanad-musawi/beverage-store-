@@ -1,0 +1,23 @@
+.filter{  
+  margin: 10px 0px; 
+
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center;
+} 
+
+.givesMeAllProductsBTN{ 
+  width: 23%; 
+  background-color: red; 
+  color: white; 
+  font-weight: bolder; 
+  font-size: 19px;
+}
+
+.filterBTN { 
+  width: 23%; 
+  background-color: red; 
+  color: white; 
+  font-weight: bolder; 
+  font-size: 19px;
+}

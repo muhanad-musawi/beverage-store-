@@ -1,0 +1,27 @@
+
+.card {   
+  margin: 0px;
+  padding: 5px 0px 20px 0px;
+  width: 95%; 
+   border:  2px solid black ; 
+  
+} 
+
+.card img { 
+  width: 95%; 
+  
+} 
+
+.container h4 { 
+  margin-top: 0px;
+}
+
+.container button{  
+  
+  border: 1px solid black ;   
+  padding: 5px 75px; 
+  background-color: red; 
+  color: white; 
+  font-size: 20px; 
+  font-weight: bolder;
+}
