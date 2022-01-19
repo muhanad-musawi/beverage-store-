@@ -24,4 +24,17 @@
   color: white; 
   font-size: 20px; 
   font-weight: bolder;
+} 
+.count{   
+  width: 40px;
+  text-align: center; 
+  margin: 10px ;  
+  padding: 6px 0px;
+  border: 2px solid red; 
+  border-radius: 50%;
+  color: white;  
+  font-size: 20px; 
+  font-weight: bolder;
+  background-color: red; 
+  
 }

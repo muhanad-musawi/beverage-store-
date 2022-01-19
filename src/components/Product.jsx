@@ -4,7 +4,9 @@ import '../products.css'
 
 function Product(props) { 
 
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0); 
+
+  
    
   useEffect(()=> {  
     const id = props.product.id 
@@ -22,13 +24,14 @@ function Product(props) {
   
     <div className="card"> 
 
-      <div > 
+      <div> 
+        <div className="count">{count}</div> 
       <img src={props.product.img} alt="Water"></img> 
       <div className="container">
       <h4>{props.product.name}</h4>
       <p> {props.product.price} €</p>  
       
-      <button onClick={clickCount}>Add to cart</button><span className="count">{count}</span>  
+      <button onClick={clickCount}>Add to cart</button> 
      
       </div>
      </div>

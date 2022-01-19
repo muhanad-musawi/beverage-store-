@@ -1,0 +1,12 @@
+.Products-Cards { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: auto; 
+  justify-items: center; 
+  grid-gap: 10px ; 
+  row-gap: 10px;
+}
+
+.linkOrder{ 
+  border-bottom: 3px solid red;
+}
