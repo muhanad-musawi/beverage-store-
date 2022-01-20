@@ -24,7 +24,7 @@ function sendToCustomer() {
   const oldOrder =  props.customerOrders[name]  
 const ordersRefresh =  { 
   ...props.customerOrders, 
- [name]:[...oldOrder, ...props.shoppingCart]
+ [name]:[...oldOrder, [...props.shoppingCart]]
 }
   props.setCustomerOrders(ordersRefresh)
   

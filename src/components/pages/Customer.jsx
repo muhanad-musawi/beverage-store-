@@ -1,15 +1,17 @@
 import React from 'react' 
 import {useParams} from 'react-router-dom'
-import CustomerItem from '../CustomerItem' 
+import CustomerElement from '../CustomerElement' 
 import './customer.css'
 function Customer(props) { 
   const {name} = useParams() 
-  const order = props.customerOrders[name] 
+  const orders = props.customerOrders[name] 
 
   return (
+     
     
-      <div className='customerOrderEntry' >
-      {order.map((item, index) =>  <CustomerItem item={item} key={index} /> )}
+      <div> 
+        <div className='welcomeText'>Hello {name}, here are all your orders listed</div>
+      {orders.map((order, index) =>  <CustomerElement customerOrders={props.customerOrders}  order={order} key={index} /> )}
     </div> 
     
   )
