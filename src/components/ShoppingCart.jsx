@@ -54,7 +54,7 @@ const totalprice = props.shoppingCart.reduce((acc,item) => {
       <div className='closeShowShoppingCart' onClick={() => setShowShoppingCart(false)}>❌</div>
         <div className='entry'>{props.shoppingCart.map(( item,index)=> <ShoppingCartItem  shoppingCart={props.shoppingCart} setShoppingCart={props.setShoppingCart} item={item}  index={index} key={index} /> )}   
          
-        <div>Total order value <span className='totalprice'>{totalprice }</span> €</div> 
+        <div>Total order value <span className='totalprice'>{totalprice.toFixed(2).replace('.', ',') }</span> €</div> 
 
         <div className='sendToCustomer'>
         <input className='inputCustomer' type="text" onChange={handelInput} value={customerInput} />
