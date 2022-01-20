@@ -12,7 +12,20 @@
   justify-content: flex-end; 
   align-items: center; 
   padding: 5px ;
+} 
+
+.orderFirstInfo{  
+  margin-top: 20px;
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center;
+} 
+.totalPrice{ 
+  color: red;
+  font-size: 20px; 
+  font-weight: bolder; 
 }
+
 .moreOrderinfo{  
   
   background-color:dodgerblue; 
@@ -25,8 +38,9 @@
   border-radius: 50%;
 }  
 
-.orderFrom {  
-  margin-top: 20px;
+.orderFrom {   
+  
+  
   font-size: 20px; 
   font-weight: bolder; 
 

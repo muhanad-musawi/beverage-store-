@@ -13,12 +13,19 @@ function CustomerElement(props) {
   const [showMoreOrderInfo, setShowMoreOrderInfo] = useState(false)  
   
   return (
-     <div className='itemBox'> 
+     <div className='itemBox'>  
+     <div className='infoFlexEnd'>
+        <div className='moreOrderinfo' onClick={() => setShowMoreOrderInfo(true)}>i</div></div>   
+
+
+        <div className='orderFirstInfo'>
      <div className='orderFrom'>Your order from <span className='orderDate'>{orderDate.getDate()} .{orderDate.getMonth() + 1}.{orderDate.getFullYear()} </span> </div> 
-     <div>  Total Price {totalprice.toFixed(2).replace('.', ',')}€</div>
+     <div className='totalPrice'>  Total Price {totalprice.toFixed(2).replace('.', ',')}€</div> 
+     </div> 
+
+
       <div >  
-        <div className='infoFlexEnd'>
-        <div className='moreOrderinfo' onClick={() => setShowMoreOrderInfo(true)}>i</div></div>  
+        
 
         { showMoreOrderInfo &&      
       <div> 
